@@ -1,0 +1,3 @@
+\contentsline {chapter}{\numberline {1}Teoria dos N\IeC {\'u}meros}{3}
+\contentsline {section}{\numberline {1.1}Nota\IeC {\c c}\IeC {\~a}o}{3}
+\contentsline {section}{\numberline {1.2}Resultados}{3}

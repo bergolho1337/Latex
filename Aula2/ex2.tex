@@ -1,0 +1,51 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+
+\author{Lucas Arantes Berg}
+
+\begin{document}
+	
+	% Escopos
+	Texto normal \itshape{itálico \bfseries{itálico + negrito} itálico} normal.
+	
+	% Listas
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+		\item Item 3
+	\end{itemize}
+	
+	\begin{enumerate}
+		\item Item numerado 1
+		\item Item numerado 2
+		\item Item numerado 3
+	\end{enumerate}
+	
+	% Precisa do pacote 'enumerate'
+	\begin{enumerate}[(i)]
+		\item Item numerado romano 1
+		\item Item numerado romano 2
+		\item Item numerado romano 3
+	\end{enumerate}
+	
+	% Combinando duas listas
+	\begin{enumerate}
+		\item Item 1
+		\item Item 2
+		\begin{itemize}
+			\item Subitem 1
+			\item Subitem 2 
+		\end{itemize}
+		\item Item 3  
+	\end{enumerate}
+	
+	% Listas descritivas
+	\begin{description}
+		\item[Item 1] Este é o primeiro item.
+		\item[Item 2] Este é o segundo item.
+		\item[Item 3] Este é o terceiro item.
+	\end{description}
+	
+		
+\end{document}

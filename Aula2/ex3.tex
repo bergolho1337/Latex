@@ -1,0 +1,43 @@
+\documentclass[]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}				% Listas enumeradas
+\usepackage{amsthm}					% Pacote matematico
+
+\author{Lucas Arantes Berg}
+
+% Teoremas
+\theoremstyle{theorem}
+\newtheorem{teo}{Teorema}[chapter]
+\newtheorem{lema}[teo]{Lema}
+
+\theoremstyle{definition}
+\newtheorem{defi}[teo]{Definição}
+
+\begin{document}
+	
+	\tableofcontents
+	
+	% Referências
+	\chapter{Teoria dos Números} \label{cap:teoria}
+	
+		\begin{defi}[Terno Pitagórico]
+			Um \emph{terno pitagórico} é formado por três números naturais $a$, $b$ e $c$ tais que $a^2 + b^2 = c^2$.
+		\end{defi}
+		
+		\begin{teo}[Fermat-Wiles] \label{teo:teoFermat}
+			Não existe nenhum conjunto de inteiros positivos $x$, $y$, $z$ e $n$, com $n > 2$, tais que $x^n + y^n = z^n$.
+		\end{teo}
+		
+		\begin{proof}
+			Seja $\Delta ABC$ um triângulo retângulo ...
+		\end{proof}
+		
+		
+	
+	\section{Notação} \label{cap:notacao}
+	
+	\section{Resultados} \label{cap:resultados}
+	
+	Ver seção \ref{cap:notacao}.
+		
+\end{document}
