@@ -1,0 +1,42 @@
+\documentclass[]{article}
+
+\usepackage{graphicx} 			% Imagens
+\usepackage{amsmath}			% Matemático
+\usepackage{amsfonts}			% Fontes
+\usepackage[utf8]{inputenc}		% Acentos
+\usepackage{subfigure}			% Conjuntos de figuras
+\usepackage{tikz}				% Desenhar no Latex
+
+% Comandos
+\newcommand{\R}{\mathbb{R}}
+% Comando necessita de um parametro obrigatorio
+\newcommand{\vecs}[1]{(#1_1,\dots,#1_n)} 
+% Comando tem o segundo argumento obrigatorio e o segundo eh opcional (default=n)
+\newcommand{\vecx}[2][n]{(#2_1,\dots,#2_{#1})}
+
+
+%opening
+\title{Trabalhando com Comandos}
+\author{Lucas Arantes Berg}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Aqui vai o resumo.
+\end{abstract}
+
+\section{Teste de Comandos}
+
+Seja $a \in \R$ tal que ...
+
+Uma coordenada de vecs $\vecs \theta$.
+
+Aqui vai outra $\vecs v$
+
+E outra $\vecs p$
+
+Coordenadas de vecx $\vecx{v}$ e $\vecx[i]{v}$ 
+
+\end{document}

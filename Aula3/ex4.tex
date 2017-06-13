@@ -1,6 +1,9 @@
 \documentclass[]{article}
 
-\usepackage{graphicx} % Imagens
+\usepackage{graphicx} 			% Imagens
+\usepackage[utf8]{inputenc}		% Acentos
+\usepackage{subfigure}			% Conjuntos de figuras
+\usepackage{tikz}				% Desenhar no Latex
 
 %opening
 \title{Trabalhando com Imagens}
@@ -16,7 +19,52 @@
 
 \section{Teste de imagens}
 
-\includegraphics[width=2cm]{figs/smiley.jpeg}
+% h = here
+% b = bottom of the page
+% p = separate page
+% t = top of page
+% ! = force position
+\begin{figure}[hb]
+	\includegraphics[width=2cm]{figs/smiley.jpeg}
+	\caption{Sorria você não está sendo filmado.}
+	\label{fig:smiley}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\subfigure[ref1][Feliz]{\includegraphics[width=2cm]{figs/smiley.jpeg}}
+	\qquad
+	\subfigure[ref1][Triste]{\includegraphics[width=2cm]{figs/sad-smiley.png}}
+	\caption{Smiles.}
+	\label{fig:smiles}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}
+		\draw (0,0) -- (0,1) -- (1,0) -- cycle;
+	\end{tikzpicture}
+	\caption{Um triângulo louco.}
+	\label{fig:triangulo}	
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}[rotate=90]
+	\draw (0:1) -- (2*72:1) -- (4*72:1) -- (6*72:1) -- (8*72:1) -- cycle;
+	\end{tikzpicture}
+	\caption{Um estrela maneira.}
+	\label{fig:estrela}	
+\end{figure}
+
+\newpage
+\begin{tabular}{|c|r|l|}
+	\hline
+	a & bb & ccc \\ \hline
+	bb & ccc & a \\ \hline
+	ccc & a & bb \\ \hline
+\end{tabular}
+
 
 
 
