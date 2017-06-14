@@ -1,0 +1,107 @@
+\documentclass[]{article}
+
+\usepackage{amsmath}			% Matemático
+\usepackage{amsfonts}			% Fontes
+\usepackage[utf8]{inputenc}		% Acentos
+\usepackage{subfigure}			% Conjuntos de figuras
+
+
+
+%opening
+\title{Trabalhando com Ambiente Matemático}
+\author{Lucas Arantes Berg}
+
+\newcommand{\x}{\dfrac{1}{2}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Aqui vai o resumo.
+\end{abstract}
+
+\section{Teste de Ambiente Matemático}
+
+Existem várias formas de escrever uma expressão matemática em Latex, são elas o modo texto e o modo destaque.
+
+\textbf{Modo texto:}
+
+$e^{i \pi} + 1 = 0$
+
+
+\textbf{Modo texto versão 2:}
+
+\(e^{i \pi} + 1 = 0\)
+
+\textbf{Modo destaque sem numeração:}
+
+\begin{equation*}
+	e^{i \pi} + 1 = 0
+\end{equation*}
+
+\textbf{Modo destaque sem numeração versão 2:}
+
+\[
+e^{i \pi} + 1 = 0
+\]
+
+\section{Exemplo de uso do modo destaque com numeração}
+
+A fórmula de Euler é dada por:
+
+\begin{equation} \label{eq:euler}
+	e^{i \pi} + 1 = 0
+\end{equation}
+
+% Para equacoes utilize o comando \eqref
+Ver \eqref{eq:euler}.
+
+\newpage
+\section{Símbolos}
+
+Exemplo de parentêses:
+
+$( \x )$
+
+% Use \left( <expressao> \right) para que configurar o tamanho dos parenteses
+$\left( \x \right)$
+
+Exemplo de sublinhado:
+
+$\underbrace{xxx}_A yy$
+
+\section{Matrizes}
+
+\[
+\begin{pmatrix}
+	1 & 2 & 3  \\
+	-1 & 0 & 5 \\
+	0 & 3 & 4
+\end{pmatrix}
+\]
+
+Seja \( A = \left(\begin{smallmatrix} 0 & 1 \\ -1 & 0 \end{smallmatrix} \right) \) a matriz ...
+
+\section{Alinhado}
+
+\begin{align} 
+	a_1 & = b_1 + c_1  \label{eq:align} \\
+	a_2 & = b_2 + c_2 - d_2 - e_2 \nonumber
+\end{align}
+
+Segue a equação \eqref{eq:align} ...
+
+\begin{gather} 
+a_1 = b_1 + c_1  \label{eq:gather} \\
+a_2 = b_2 + c_2 - d_2 - e_2 \nonumber
+\end{gather}
+
+\begin{multline} \label{eq:multiline}
+	a + b + c + d + e + f + g \\
+	 + h + i + j + k + l + m + n
+\end{multline}
+
+Segue uma equação que utiliza multiline \eqref{eq:multiline}
+
+\end{document}
