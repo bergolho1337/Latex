@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{langtangen2016primer}
+{\sc Langtangen, H.}
+\newblock {\em A Primer on Scientific Programming with Python}.
+\newblock Texts in Computational Science and Engineering. Springer Berlin
+  Heidelberg, 2016.
+
+\bibitem{oualline2002practical}
+{\sc Oualline, S.}
+\newblock {\em Practical C++ Programming: Programming Style Guidelines}.
+\newblock O'Reilly Media, 2002.
+
+\bibitem{stroustrup2013c++}
+{\sc Stroustrup, B.}
+\newblock {\em The C++ Programming Language}.
+\newblock Pearson Education, 2013.
+
+\bibitem{stroustrup2014programming}
+{\sc Stroustrup, B.}
+\newblock {\em Programming: Principles and Practice Using C++}.
+\newblock Pearson Education, 2014.
+
+\bibitem{torres2017vii}
+{\sc Torres, I., Bustamante, J., and Sierra, D.}
+\newblock {\em VII Latin American Congress on Biomedical Engineering CLAIB
+  2016, Bucaramanga, Santander, Colombia, October 26th -28th, 2016}.
+\newblock IFMBE Proceedings. Springer Singapore, 2017.
+
+\end{thebibliography}

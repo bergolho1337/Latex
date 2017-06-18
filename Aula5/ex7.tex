@@ -1,0 +1,33 @@
+\documentclass[]{article}
+
+\usepackage{graphicx} 			% Imagens
+\usepackage{amsmath}			% Matemático
+\usepackage{amsfonts}			% Fontes
+\usepackage[utf8]{inputenc}		% Acentos
+
+
+
+%opening
+\title{Trabalhando com Bibliografia}
+\author{Lucas Arantes Berg}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+	Aqui vai o resumo.
+\end{abstract}
+
+\section{Teste de Bibliografia}
+
+The C$++$ programming language is a powerful one. If you want to learn more about it, you should definely check the books \cite{stroustrup2013c++}, \cite{stroustrup2014programming} and \cite{oualline2002practical}.
+
+Another great programming language is Python. A great book that introduces you to this new language and gives implementations of the most famous scientific algorithms is \cite{langtangen2016primer}.
+
+You should also check this \cite{torres2017vii}.
+
+\bibliographystyle{acm}
+\bibliography{referencias}
+
+\end{document}
