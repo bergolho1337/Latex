@@ -9,7 +9,7 @@
     2) Criar uma nova branch com o nome 'gh-pages';
     3) Definir esta nova branch como a padrão;
     4) Deletar a branch 'master'
-    5) A URL fica acessível como:  https://<username>.github.io/<repository_name>/
+    5) A URL fica acessível como:  https://<<username>>.github.io/<<repository_name>>/
 
 - Assim é possível adicionar um arquivo 'index.html' e configurar uma página Web (CSS + Javascript) e que tenha links para os arquivos do repositório. :-)
 
