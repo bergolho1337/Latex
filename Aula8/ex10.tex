@@ -1,0 +1,151 @@
+\documentclass{beamer}
+
+\usepackage{graphicx} 			% Imagens
+\usepackage{amsmath}			% Matemático
+\usepackage{amsfonts}			% Fontes
+\usepackage[utf8]{inputenc}		% Acentos
+\usepackage{float}				% Incluir figura no minipage
+
+\title{Trabalhando com Apresentações}
+\author[L. A. B.]{Lucas Arantes Berg}
+\institute{Universidade Federal de Juiz de Fora}
+\date{\today}
+\usetheme{default}
+\usecolortheme{orchid}
+
+% Definindo cores
+\setbeamercolor{cor1}{bg=blue!60!black,fg=white}
+\setbeamercolor{cor2}{bg=white,fg=blue!60!black}
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Sumário}
+		\tableofcontents[section,subsection]
+		\section{Seção 1}
+		\section{Seção 2}
+		\section{Seção 3}
+		\section{Testando blocos}
+		\section{Testando colunas}
+		\section{Testando itens}
+		\section{Testando overlays}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Seção 1}
+		Texto número 1.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Seção 2}
+		Texto número 2.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Seção 3}
+		Texto número 3.
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando blocos}
+		\begin{block}{Título do bloco}
+			Texto dentro do bloco.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando blocos}
+		\begin{beamercolorbox}[shadow=true,rounded=true]{cor1}
+			Texto dentro da caixa com a cor 1.
+		\end{beamercolorbox}
+		\begin{beamerboxesrounded}[lower=cor2,upper=cor1,shadow=true]{Título}
+			Texto dentro da caixa com a cor 2
+		\end{beamerboxesrounded}	
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando colunas}
+		\begin{columns}
+			\begin{column}[t]{3cm}
+				Texto na coluna 1.
+			\end{column}
+			\begin{column}[t]{3cm}
+				Texto na coluna 2.
+			\end{column}
+			\begin{column}[t]{3cm}
+				Texto na coluna 3.
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando itens}
+		\begin{itemize}
+			\item<1-> Primeira coisa.
+			\item<2-> Segunda coisa.
+			\item<3-> Terceira coisa.
+		\end{itemize}
+		% O identificador que aparece depois do \item eh para colocar cada novo item em um slide diferente (overlay)
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando itens com alerta}
+		\begin{itemize}
+			\item<1-|alert@1> Primeira coisa.
+			\item<2-|alert@2> Segunda coisa.
+			\item<3-|alert@3> Terceira coisa.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando \textit{overlay} em blocos}
+		\begin{block}{Título 1}<1->
+			Este é o primeiro bloco.
+		\end{block}
+		\begin{block}{Título 2}<2->
+			Este é o segundo bloco.
+		\end{block}
+		\begin{block}{Título 3}<3->
+			Este é o terceiro bloco.
+		\end{block}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Testando \textit{overlay} em imagens}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.2]{img/smiley.jpeg}<1>
+			\centering
+			\includegraphics[scale=0.2]{img/sad-smiley.png}<2>
+		\end{figure}
+		\begin{itemize}
+			\item<1> Agora estou feliz.
+			\item<2> Agora estou triste.
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Slides com pausa}
+		\begin{itemize}
+			\item 2 é primo (dois divisores: 1 e 2).
+			\pause
+			\item 3 é primo (dois divisores: 1 e 3).
+			\pause
+			\item 4 não é primo ({\color{red}três} divisores: 1, 2 and 4). 
+		\end{itemize}
+	\end{frame}
+	
+	% Colocar fragile no argumento do frame para o verbatim funcionar
+	\begin{frame}[fragile]
+		\frametitle{Verbatim}
+		\begin{verbatim}
+			Texto exemplo
+			  aqui.
+		\end{verbatim}
+	\end{frame}
+	
+\end{document}
+
