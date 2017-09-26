@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Arritmias Card\IeC {\'\i }acas}{2}{0}{1}
+\beamer@sectionintoc {2}{Sistema de Condu\IeC {\c c}\IeC {\~a}o Card\IeC {\'\i }aco}{2}{0}{2}
+\beamer@sectionintoc {3}{Potencial de A\IeC {\c c}\IeC {\~a}o}{2}{0}{3}
+\beamer@sectionintoc {4}{Testando v\IeC {\'\i }deo}{2}{0}{4}
